@@ -2,4 +2,171 @@ page{
     width: 100%;
     height: 100%;
     background-color: #fadfba;
+    overflow: hidden;
+}
+
+/* 背景图 */
+.bg{
+    width: 100%;
+    height: 100%;
+}
+.bg image{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* box容器 */
+.box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+/* 个人信息背景 */
+.headBg image{
+    width: 100%;
+}
+
+/* 个人信息头像 */
+.headImg{
+    position: absolute;
+    top: 70rpx;
+    left: 140rpx;
+}
+.headImg image{
+    width: 146rpx;
+    height: 146rpx;
+}
+
+/* 个人信息内容 */
+.headContent{
+    width: 350rpx;
+    position: absolute;
+    top: 90rpx;
+    left: 320rpx;
+}
+.headContent .headName{
+    font-size: 24rpx;
+    color: #3c3a38;
+    padding-bottom: 20rpx;
+}
+.headContent .headName text{
+    font-weight: bold;
+    font-size: 36rpx;
+    padding-right: 20rpx;
+}
+.headContent .commission{
+    font-size: 28rpx;
+    color: #3c3a38;
+}
+.headContent .commission text{
+    font-weight: bold;
+    font-size: 32rpx;
+}
+
+/* 我的订单 */
+.indent{
+    position: relative;
+    padding: 15rpx;
+    z-index: 3;
+}
+
+/* 我的订单背景图 */
+.indentBg image{
+    width: 100%;
+}
+
+/* 我的订单内容 */
+.indentContent{
+    position: absolute;
+    top: 30rpx;
+    left: 50rpx;
+}
+.indentText text{
+    font-size: 24rpx;
+    font-weight: bold;
+    padding-left: 20rpx;
+}
+.status{
+    width: 650rpx;
+    height: 165rpx;
+    /* background-color: yellow; */
+    display: flex;
+    margin-top: 20rpx;
+}
+.status .statusItem{
+    padding: 20rpx;
+    width: 137rpx;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* 图片大小设置 */
+.statusItem .icon01{
+    width: 70rpx;
+    height: 75rpx;
+    padding-bottom: 7rpx;
+}
+.statusItem .icon02{
+    width: 81rpx;
+    height: 80rpx;
+    padding-bottom: 4rpx;
+}
+.statusItem .icon03{
+    width: 76rpx;
+    height: 68rpx;
+    padding-bottom: 12rpx;
+}
+.statusItem .icon04{
+    width: 88rpx;
+    height: 81rpx;
+}
+.statusItem text{
+    font-size: 24rpx;
+    padding-top: 15rpx;
+}
+
+/* 统计图挂牌 */
+.sign{
+    width: 100%;
+    margin-top: -50rpx;
+    margin-left: 10rpx;
+    position: relative;
+    z-index: 2;
+}
+.sign image{
+    width: 202rpx;
+    height: 149rpx;
+}
+
+/* 统计图图表 */
+.chart{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellowgreen; */
+    margin-top: -115rpx;
+    position: relative;
+}
+.chart image{
+    width: 100%;
+}
+
+/* 佣金详细 */
+.commissionXX{
+    width: 205rpx;
+    position: relative;
+    right: -522rpx;
+    bottom: 82rpx;
+    z-index: 2;
+}
+.commissionXX image{
+    width: 203rpx;
+    height: 57rpx;
 }

@@ -4,20 +4,20 @@
 
     <!-- 底部导航背景图 -->
     <view class="tabBarBgImg">
-        <image src="../../img/index/footerbg.png" mode="widthFix"></image>
+        <image src="../../img/index/footerbg.png"></image>
     </view>
 
     <!-- 底部导航元素 -->
     <view class="tabBar">
         <view class="tabBarItem" id="index" bindtap="gotoPage">
-            <image src="../../img/index/index-icon-action.png" mode="widthFix"></image>
+            <image src="../../img/index/index-icon-action.png"></image>
             <text>首页</text>
         </view>
         <view class="tabBarItem">
             <image class="tabBarPush" src="../../img/index/push.png" mode="widthFix"></image>
         </view>
         <view class="tabBarItem" id="my" bindtap="gotoPage">
-            <image src="../../img/index/my-icon.png" mode="widthFix"></image>
+            <image src="../../img/index/my-icon.png"></image>
             <text>我的</text>
         </view>
     </view>

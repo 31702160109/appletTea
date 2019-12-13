@@ -1,3 +1,82 @@
-<!--pages/my/my.wxml-->
-<!-- 以下是对一个自定义组件的引用 -->
+<!-- 背景图 -->
+<view class="bg">
+    <image src="../../img/my/bg.png"></image>
+</view>
+
+
+<view class="box">
+    
+    <!-- 个人信息背景 -->
+    <view class="headBg">
+        <image src="../../img/my/headbg.png" mode="widthFix"></image>
+    </view>
+
+    <!-- 个人信息头像 -->
+    <view class="headImg">
+        <image src="../../img/my/head.png"></image>
+    </view>
+
+    <!-- 个人信息内容 -->
+    <view class="headContent">
+        <view class="headName">
+            <text>林大包</text>一级助理
+        </view>
+        <view class="commission">
+            佣金总计 <text>10000.00</text> 元
+        </view>
+    </view>
+
+    <!-- 我的订单 -->
+    <view class="indent">
+        <!-- 我的订单背景图 -->
+        <view class="indentBg">
+            <image src="../../img/my/indentBg02.png" mode="widthFix"></image>
+        </view>
+
+        <!-- 我的订单内容 -->
+        <view class="indentContent">
+            <view class="indentText">
+                <text>我的订单</text>
+            </view>
+
+            <view class="status">
+                <view class="statusItem">
+                    <image class="icon01" src="../../img/my/icon01.png"></image>
+                    <text>待付款</text>
+                </view>
+                <view class="statusItem">                
+                    <image class="icon02" src="../../img/my/icon02.png"></image>
+                    <text>待发货</text>
+                </view>
+                <view class="statusItem">
+                    <image class="icon03" src="../../img/my/icon03.png"></image>
+                    <text>待收货</text>
+                </view>
+                <view class="statusItem">
+                    <image class="icon04" src="../../img/my/icon04.png"></image>
+                    <text>退款/售后</text>
+                </view>
+            </view>
+        </view>
+
+    </view>
+    
+
+    <!-- 佣金统计图 -->
+    <view class="sign">
+        <image src="../../img/my/commissionTJT.png"></image>
+    </view>
+
+    <!-- 佣金图表 -->
+    <view class="chart">
+        <image src="../../img/my/graph.png" mode="widthFix"></image>
+    </view>
+
+    <!-- 佣金详细 -->
+    <view class="commissionXX">
+        <image src="../../img/my/commissionXX.png"></image>
+    </view>
+</view>
+
+<!-- 底部导航 -->
 <customTarBar></customTarBar>

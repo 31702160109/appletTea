@@ -5,7 +5,7 @@
 
 <!-- 背景图 -->
 <view class="bg">
-  <image src="../../img/index/bg.png" mode="widthFix"></image>
+  <image src="../../img/index/bg.png"></image>
 </view>
 
 <!-- box -->
