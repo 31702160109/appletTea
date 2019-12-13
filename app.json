@@ -1,16 +1,17 @@
 {
-    "pages": [
-        "pages/index/index",
-        "pages/my/my",
-        "pages/logs/logs",
-        "customModule/tarBarModule/tarBar"
-    ],
-    "window": {
-        "backgroundTextStyle": "light",
-        "navigationBarBackgroundColor": "#fff",
-        "navigationBarTitleText": "壮瑶茗茶",
-        "navigationBarTextStyle": "black"
-    },
-    "style": "v2",
-    "sitemapLocation": "sitemap.json"
+  "pages": [
+    "pages/index/index",
+    "pages/my/my",
+    "pages/logs/logs",
+    "pages/myOrder/myOrder",
+    "customModule/tarBarModule/tarBar"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "壮瑶茗茶",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
 }

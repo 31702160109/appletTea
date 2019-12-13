@@ -40,19 +40,19 @@
             </view>
 
             <view class="status">
-                <view class="statusItem">
+                <view class="statusItem" bindtap="myOrder">
                     <image class="icon01" src="../../img/my/icon01.png"></image>
                     <text>待付款</text>
                 </view>
-                <view class="statusItem">                
+                <view class="statusItem" bindtap="myOrder">                
                     <image class="icon02" src="../../img/my/icon02.png"></image>
                     <text>待发货</text>
                 </view>
-                <view class="statusItem">
+                <view class="statusItem" bindtap="myOrder">
                     <image class="icon03" src="../../img/my/icon03.png"></image>
                     <text>待收货</text>
                 </view>
-                <view class="statusItem">
+                <view class="statusItem" bindtap="myOrder">
                     <image class="icon04" src="../../img/my/icon04.png"></image>
                     <text>退款/售后</text>
                 </view>

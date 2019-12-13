@@ -36,7 +36,7 @@
         
         <!-- 商品轮播图 -->
         <view class="shopBanner">
-            <swiper class='shopBannerImg' indicator-dots autoplay='true' interval='3000' duration='1000' circular='true'>
+            <swiper class='shopBannerImg' indicator-dots autoplay='true' interval='2000' duration='1000' circular='true'>
                 <swiper-item>
                     <image class="banner-img"  src='../../img/index/tea.jpg'  mode='scaleToFill'></image>
                 </swiper-item>
