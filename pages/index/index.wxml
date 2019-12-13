@@ -1,0 +1,75 @@
+<!-- 顶部导航栏 -->
+<!-- <view class="navigationStyle">
+    <text>壮瑶茗茶</text>
+</view> -->
+
+<!-- 背景图 -->
+<view class="bg">
+  <image src="../../img/index/bg.png" mode="widthFix"></image>
+</view>
+
+<!-- box -->
+<view class="box">
+
+    <!-- 轮播图 -->
+    <swiper class='banner' indicator-dots autoplay='true' interval='3000' duration='1000' circular='true'>
+        <swiper-item>
+            <image class="banner-img"  src='../../img/index/banner.png'  mode='widthFix'></image>
+        </swiper-item>
+        <swiper-item>
+            <image class="banner-img"  src='../../img/index/banner.png'  mode='widthFix'></image>
+        </swiper-item>
+    </swiper>
+
+    <!-- 挂牌 -->
+    <view class="sign">
+        <image src="../../img/index/sign.png" mode="widthFix"></image>
+    </view>
+
+    <!-- 商品背景 -->
+    <view class="shopBg">
+        <image src="../../img/index/main-middle.png"></image>
+    </view>
+
+    <!-- 商品内容 -->
+    <view class="shopContent">
+        
+        <!-- 商品轮播图 -->
+        <view class="shopBanner">
+            <swiper class='shopBannerImg' indicator-dots autoplay='true' interval='3000' duration='1000' circular='true'>
+                <swiper-item>
+                    <image class="banner-img"  src='../../img/index/tea.jpg'  mode='scaleToFill'></image>
+                </swiper-item>
+                <swiper-item>
+                    <image class="banner-img"  src='../../img/index/tea.jpg'  mode='scaleToFill'></image>
+                </swiper-item>
+            </swiper>
+        </view>
+
+        <!-- 商品标题  参数 -->
+        <view class="shopTitlePara">
+            <view class="shopTitle">【壮瑶茗茶】蒲公  英金花茶</view>
+            <view class="shopPara">中草药配方：金花茶、普华影、淡竹叶、荷叶、鱼腥草、桃仁.净含量：4g每袋</view>
+        </view>
+
+        <!-- 商品参数方框 -->
+        <image class="shopRectangle" src="../../img/index/main-middle-rectangle.png"></image>
+
+        <!-- 商品详情 -->
+        <view class="shopDetails">
+            <text>针对风寒湿痹所致的痛风、慢性肩周炎、腰膝颈椎等顽疾而自主研制成中药通络丸，其用方特点在于针对痹症之“不通则痛”症状，以“通则不痛”的方式来通络镇痛 清热解毒。经数百例患者临床用药反馈，效果良好。</text>
+        </view>
+
+        <!-- 立即下单 -->
+        <view class="shopOrder">
+            <image src="../../img/index/submit.png" mode="widthFix"></image>
+        </view>
+
+    </view>
+
+</view>
+
+<!-- 底部导航 -->
+<customTarBar></customTarBar>
+
+

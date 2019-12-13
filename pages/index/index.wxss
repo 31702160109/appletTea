@@ -1,0 +1,153 @@
+page{
+    width: 100%;
+    height: 100%;
+    background-color: #fadfba;
+}
+
+/* 顶部导航栏 */
+/* .navigationStyle{
+    width: 100%;
+    height: 120rpx;
+    position: fixed;
+    z-index: 10;
+    background-color: #FFFFFF;
+}
+.navigationStyle text{
+    position: absolute;
+    top: 55rpx;
+    left: 20rpx;
+} */
+
+/* 背景图 */
+.bg{
+    width: 100%;
+    height: 100%;
+}
+.bg image{
+    width: 100%;
+    z-index: -1;
+}
+
+/* 整体盒子 */
+.box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+/* banner */
+.banner{
+    width: 100%;
+    height: 392rpx;
+    z-index: 2;
+}
+.banner .banner-img{
+    width: 100%;
+}
+
+/* 挂牌 */
+.sign{
+    width: 100%;
+    margin-top: -20rpx;
+    margin-left: 20rpx;
+    z-index: 1
+}
+.sign image{
+    width: 22%;
+}
+
+/* 商品背景 */
+.shopBg{
+    width: 96%;
+    margin-left: 2%;
+    margin-top: -20rpx;
+}
+.shopBg image{
+    width: 100%;
+    height: 540rpx;
+}
+
+/* 商品内容 */
+.shopContent{
+    width: 100%;
+    position: absolute;
+    top: 492rpx;
+    left: 20rpx;
+    /* background-color: yellow; */
+}
+
+/* 商品轮播图 */
+.shopBanner{
+    background-color: blue;
+    width: 54%;
+    height: 320rpx;
+    float: left;
+    border-radius: 10rpx;
+    margin: 20rpx;
+    overflow: hidden;
+}
+.shopBannerImg{
+    width: 100%;
+    height: 360rpx;
+}
+
+/* 商品标题  参数 */
+.shopTitlePara{
+    /* background-color: pink; */
+    width: 33%;
+    height: 320rpx;
+    float: left;
+    margin-right: 20rpx;
+    margin-top: 20rpx;
+}
+.shopTitle{
+    font-size: 28rpx;
+}
+.shopPara{
+    float: right;
+    height: 240rpx;
+    letter-spacing: 5rpx;
+    line-height: 45rpx;
+    writing-mode:vertical-rl;
+    font-size: 20rpx;
+    padding-top: 15rpx;
+    padding-right: 27rpx;
+}
+.shopRectangle{
+    width: 175rpx;
+    height: 247rpx;
+    position: absolute;
+    top: 100rpx;
+    right: 130rpx;
+}
+
+/* 商品详情 */
+.shopDetails{
+    float: left;
+    width: 90%;
+    /* background-color: yellowgreen; */
+    height: 135rpx;
+    margin: 0 20rpx; 
+}
+.shopDetails text{
+    display: block;
+    text-indent: 2em;
+    font-size: 20rpx;
+    line-height: 35rpx;
+    letter-spacing: 5rpx;
+    color: #000000;
+}
+
+/* 商品 立即下单 */
+.shopOrder{
+    width: 30%;
+    position: absolute;
+    right: 10rpx;
+    bottom: -40rpx;
+}
+.shopOrder image{
+    width: 184rpx;
+}
+

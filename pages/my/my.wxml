@@ -1,0 +1,3 @@
+<!--pages/my/my.wxml-->
+<!-- 以下是对一个自定义组件的引用 -->
+<customTarBar></customTarBar>

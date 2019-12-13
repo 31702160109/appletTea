@@ -1,0 +1,49 @@
+/* customModule/TarBarModule/tarBar.wxss */
+page{
+    width: 100%;
+    height: 100%;
+    background-color: #fadfba;
+}
+/* 底部导航 */
+.footerTabBar{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #FFFFFF
+}
+
+/* 底部导航背景图 */
+.tabBarBgImg image{
+    width: 100%;
+}
+
+/* 底部导航元素 */
+.tabBar{
+    width: 100%;
+    position: absolute;
+    bottom: 10rpx;
+    display: flex;
+}
+.tabBar .tabBarItem{
+    width: 100rpx;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.tabBar .tabBarItem image{
+    width: 43rpx;
+    height: 48rpx;
+}
+.tabBar .tabBarItem text{
+  font-size: 24rpx;
+  margin-top: 10rpx;
+}
+.tabBar .tabBarItem .tabBarPush{
+    position: absolute;
+    width: 106rpx !important;
+    height: 106rpx !important;
+    bottom: 20rpx;
+}
