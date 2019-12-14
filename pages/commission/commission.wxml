@@ -1,0 +1,4 @@
+<!-- 背景图 -->
+<view class="bg">
+    <image src="../../img/bg.png"></image>
+</view>

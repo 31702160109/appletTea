@@ -4,6 +4,8 @@
     "pages/my/my",
     "pages/logs/logs",
     "pages/myOrder/myOrder",
+    "pages/commission/commission",
+    "pages/details/details",
     "customModule/tarBarModule/tarBar"
   ],
   "window": {

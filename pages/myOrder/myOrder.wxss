@@ -1,1 +1,197 @@
-/* pages/myOrder/myOrder.wxss */
+page{
+    width: 100%;
+    height: 100%;
+}
+
+/* 背景图 */
+.bg{
+    width: 100%;
+    height: 100%;
+}
+.bg image{
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.box{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 订单状态标题栏 */
+.titleBg{
+    width: 748rpx;
+    height: 74rpx;
+}
+.titleBg image{
+    width: 748rpx;
+    height: 74rpx;
+}
+.myOrderStatus{
+    width: 100%;
+    height: 74rpx;
+    position: absolute;
+    top: 0;
+    display: flex;
+}
+.myOrderStatus .statusItem{
+    width: 140rpx;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.myOrderStatus text{
+    font-size: 26rpx;
+}
+
+/* 正文背景图 */
+.ditailsBg{
+    width: 100%;
+    height: 100%;
+    padding-top: 20rpx;
+}
+.ditailsBg image{
+    width: 100%;
+    height: 100%;
+}
+
+/* 暂无订单 */
+.noOrder{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50rpx;
+    margin-left: -65rpx;
+    display: none;
+}
+.noOrder text{
+    font-size: 32rpx;
+    font-weight: bold;
+}
+
+/* 商品 */
+.OrderShop{
+    width: 100%;
+    position: absolute;
+    top: 104rpx;
+    left: 0;
+}
+.shopItem{
+    position: relative;
+}
+.shopBg{
+    padding: 10rpx 10rpx 0 10rpx;
+}
+.shopBg image{
+    width: 100%;
+    height: 313rpx;
+}
+/* 商品内容 */
+.shopContent{
+    width: 90%;
+    height: 283rpx;
+    position: absolute;
+    top: 30rpx;
+    left: 5%;
+    right: 5%;
+}
+.shopContent .shopTitle{
+    width: 100%;
+    padding-bottom: 10rpx;
+    border-bottom: 1rpx solid #000000;
+    overflow: hidden;
+}
+.shopTitle text{
+    font-size: 20rpx;
+}
+.shopTitle .orderNumber{
+    float: left;
+}
+.shopTitle .shopStatus{
+    float: right;
+}
+/* 商品详情参数 */
+.shopContent .shopDetails{
+    width: 100%;
+    height: 180rpx;
+    margin: 15rpx 0 7rpx 0;
+}
+/* 商品左 */
+.shopDetails .shopLeft{
+    float: left;
+    width: 28%;
+    margin-right: 4%;
+}
+.shopDetails .shopLeft image{
+    width: 100%;
+    height: 164rpx;
+}
+/* 商品右 */
+.shopDetails .shopRight{
+    float: right;
+    width: 68%;
+    height: 99rpx;
+}
+.shopRight .shopRightTop{
+    width: 100%;
+    font-family: monospace, 'Courier New', Courier;
+}
+.shopRightTop .shopRightTitle{
+    display: block;
+    font-size: 24rpx;
+}
+.shopRightTop .shopRightSize{
+    margin-top: 15rpx;
+    font-size: 20rpx;
+}
+.shopRightTop .shopRightSize text{
+    color: red;
+}
+
+.shopRight .shopRightBottom{
+    position: absolute;
+    right: 0;
+    bottom: 57rpx;
+    font-size: 20rpx;
+}
+.shopNumber{
+    color: red;
+    padding-right: 10rpx;
+}
+.RMB{
+    color: red;
+}
+.moneyNumber{
+    font-size: 28rpx;
+    color: red;
+    font-weight: bold;
+}
+
+/* 按钮 */
+.shopBtn{
+    width: 100%;
+}
+.shopBtn text{
+    float: right;
+    width: 110rpx;
+    padding: 7rpx;
+    margin: 0 5rpx;
+    font-family: serif;
+    border-radius: 40rpx;
+    font-size: 20rpx;
+    text-align: center;
+}
+.shopBtn .detailsBtn{
+    border: 1rpx solid #000000;
+    margin-right: 10rpx;
+}
+.shopBtn .payBtn{
+    border: 1rpx solid red;
+    color: red;
+}

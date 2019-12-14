@@ -1,11 +1,6 @@
-<!-- 顶部导航栏 -->
-<!-- <view class="navigationStyle">
-    <text>壮瑶茗茶</text>
-</view> -->
-
 <!-- 背景图 -->
 <view class="bg">
-  <image src="../../img/index/bg.png"></image>
+  <image src="../../img/bg.jpg"></image>
 </view>
 
 <!-- box -->
@@ -14,10 +9,10 @@
     <!-- 轮播图 -->
     <swiper class='banner' indicator-dots autoplay='true' interval='3000' duration='1000' circular='true'>
         <swiper-item>
-            <image class="banner-img"  src='../../img/index/banner.png'  mode='widthFix'></image>
+            <image class="banner-img"  src='../../img/index/banner.jpg'  mode='widthFix'></image>
         </swiper-item>
         <swiper-item>
-            <image class="banner-img"  src='../../img/index/banner.png'  mode='widthFix'></image>
+            <image class="banner-img"  src='../../img/index/banner.jpg'  mode='widthFix'></image>
         </swiper-item>
     </swiper>
 
@@ -28,7 +23,7 @@
 
     <!-- 商品背景 -->
     <view class="shopBg">
-        <image src="../../img/index/main-middle.png"></image>
+        <image src="../../img/index/main-middle.jpg"></image>
     </view>
 
     <!-- 商品内容 -->

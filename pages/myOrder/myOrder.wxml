@@ -1,2 +1,115 @@
-<!--pages/myOrder/myOrder.wxml-->
-<text>pages/myOrder/myOrder.wxml</text>
+<!-- 背景图 -->
+<view class="bg">
+    <image src="../../img/bg.jpg"></image>
+</view>
+
+<view class="box">
+
+    <!-- 订单状态背景图 -->
+    <view class="titleBg">
+        <image src="../../img/myOrder/titleBg.jpg"></image>
+    </view>
+    <!-- 订单状态 -->
+    <view class="myOrderStatus">
+        <text class="statusItem">待付款</text>
+        <text class="statusItem">待发货</text>
+        <text class="statusItem">待收货</text>
+        <text class="statusItem">退款/售后</text>
+    </view>
+
+    <!-- 正文背景图 -->
+    <view class="ditailsBg">
+        <image src="../../img/myOrder/detailsBg.jpg"></image>
+    </view>
+
+    <!-- 商品 -->
+    <view class="OrderShop">
+        
+        <view class="shopItem">
+            <!-- 商品图片 -->
+            <view class="shopBg">
+                <image src="../../img/myOrder/shopBg.jpg"></image>
+            </view>
+            <!-- 商品内容 -->
+            <view class="shopContent">
+                <view class="shopTitle">
+                    <text class="orderNumber">订单编号：2654456569642</text>
+                    <text class="shopStatus">待付款</text>
+                </view>
+                <view class="shopDetails">
+                    <view class="shopLeft">
+                        <image src="../../img/myOrder/shopImg.png"></image>
+                    </view>
+                    <view class="shopRight">
+                        <view class="shopRightTop">
+                            <text class="shopRightTitle">【壮瑶茗茶】蒲公英金花茶</text>
+                            <text class="shopRightSize">规格：<text>五盒装</text></text>
+                        </view>
+                        <view class="shopRightBottom">
+                            数量：
+                            <text class="shopNumber">30</text>
+                            合计：
+                            <text class="RMB">¥</text>
+                            <text class="moneyNumber">580.00</text> 
+                        </view>
+                    </view>
+                </view>
+                <!-- 按钮 -->
+                <view class="shopBtn">
+                    <text class="payBtn">立即付款</text>
+                    <text class="detailsBtn" bindtap="detailsBtn">订单详情</text>
+                </view>
+            </view>
+        </view>
+        
+        <view class="shopItem">
+            <!-- 商品图片 -->
+            <view class="shopBg">
+                <image src="../../img/myOrder/shopBg.jpg"></image>
+            </view>
+            <!-- 商品内容 -->
+            <view class="shopContent">
+                <view class="shopTitle">
+                    <text class="orderNumber">订单编号：2654456569642</text>
+                    <text class="shopStatus">待付款</text>
+                </view>
+                <view class="shopDetails">
+                    <view class="shopLeft">
+                        <image src="../../img/myOrder/shopImg.png"></image>
+                    </view>
+                    <view class="shopRight">
+                        <view class="shopRightTop">
+                            <text class="shopRightTitle">【壮瑶茗茶】蒲公英金花茶</text>
+                            <text class="shopRightSize">规格：<text>五盒装</text></text>
+                        </view>
+                        <view class="shopRightBottom">
+                            数量：
+                            <text class="shopNumber">30</text>
+                            合计：
+                            <text class="RMB">¥</text>
+                            <text class="moneyNumber">580.00</text> 
+                        </view>
+                    </view>
+                </view>
+                <!-- 按钮 -->
+                <view class="shopBtn">
+                    <text class="payBtn">立即付款</text>
+                    <text class="detailsBtn" bindtap="detailsBtn">订单详情</text>
+                </view>
+            </view>
+        </view>
+        
+
+    </view>
+
+    <!-- 暂无订单 -->
+    <view class="noOrder">
+        <text>暂 无 订 单</text>
+    </view>
+
+</view>
+
+
+
+<!-- 底部tabBar -->
+<customTarBar />

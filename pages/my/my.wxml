@@ -1,14 +1,13 @@
 <!-- 背景图 -->
 <view class="bg">
-    <image src="../../img/my/bg.png"></image>
+    <image src="../../img/bg.jpg"></image>
 </view>
-
 
 <view class="box">
     
     <!-- 个人信息背景 -->
     <view class="headBg">
-        <image src="../../img/my/headbg.png" mode="widthFix"></image>
+        <image src="../../img/my/headBg.jpg" mode="widthFix"></image>
     </view>
 
     <!-- 个人信息头像 -->
@@ -30,7 +29,7 @@
     <view class="indent">
         <!-- 我的订单背景图 -->
         <view class="indentBg">
-            <image src="../../img/my/indentBg02.png" mode="widthFix"></image>
+            <image src="../../img/my/indentBg.jpg" mode="widthFix"></image>
         </view>
 
         <!-- 我的订单内容 -->
@@ -69,11 +68,11 @@
 
     <!-- 佣金图表 -->
     <view class="chart">
-        <image src="../../img/my/graph.png" mode="widthFix"></image>
+        <image src="../../img/my/graph.jpg" mode="widthFix"></image>
     </view>
 
     <!-- 佣金详细 -->
-    <view class="commissionXX">
+    <view class="commissionXX" bindtap="commissionPage">
         <image src="../../img/my/commissionXX.png"></image>
     </view>
 </view>

@@ -1,4 +1,4 @@
-// pages/my/my.js
+// pages/details/details.js
 Page({
 
     /**
@@ -8,22 +8,11 @@ Page({
 
     },
 
-    myOrder: function(event){
-      wx.navigateTo({
-        url: '../myOrder/myOrder',
-      })
-    },
-    commissionPage: function(event){
-        wx.navigateTo({
-            url: '../commission/commission',
-        })
-    },
-
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad: function (options) {
-      
+
     },
 
     /**

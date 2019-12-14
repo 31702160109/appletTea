@@ -8,6 +8,13 @@ Page({
 
   },
 
+
+detailsBtn:function(event){
+    wx.navigateTo({
+        url: '../details/details',
+    })
+},
+
   /**
    * 生命周期函数--监听页面加载
    */

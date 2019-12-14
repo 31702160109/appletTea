@@ -1,0 +1,97 @@
+<!-- 背景图 -->
+<view class="bg">
+    <image src="../../img/bg.jpg"></image>
+</view>
+
+<view class="box">
+
+    <!-- 商品区域背景图 -->
+    <view class="shopBg">
+        <image src="../../img/details/shopBg.jpg" mode="widthFix"></image>
+    </view>
+
+    <!-- 商品区域 -->
+    <view class="shopBox">
+        <!-- 轮播图 -->
+        <swiper class='banner' indicator-dots autoplay='true' interval='3000' duration='1000' circular='true'>
+            <swiper-item>
+                <image class="banner-img"  src='../../img/details/shop.jpg'></image>
+            </swiper-item>
+            <swiper-item>
+                <image class="banner-img"  src='../../img/details/shop.jpg'></image>
+            </swiper-item>
+        </swiper>
+        <!-- 标题 -->
+        <view class="shopTitle">【壮瑶茗茶】蒲公英金花茶</view>
+        <view class="shopPrice">
+            ¥ <text class="priceSection01">10.00</text><text class="priceSection03">-</text><text class="priceSection02">35.00</text>
+        </view>
+        <view class="shopOldPrice">价格：
+            <text>¥</text><text class="OldPrice01">50.00</text><text class="OldPrice03">-</text><text class="OldPrice02">135.00</text>
+        </view>
+        <!-- 规则参数 -->
+        <view class="shopParm">
+            <view class="shopParmLeft">
+                <text class="select">选择</text>
+                <text class="parm">规则参数</text>
+            </view>
+
+            <view class="shopParmRight">
+                <text>共<text>24</text>种分类</text>
+            </view>
+            
+            <view class="parmItemBox">
+                <view class="parmItem"></view>
+                <view class="parmItem"></view>
+                <view class="parmItem"></view>
+                <view class="parmItem"></view>
+                <view class="parmItem"></view>
+                <view class="parmItem"></view>
+            </view>
+
+        </view>
+        <!-- 库存量、运费 -->
+        <view class="shopBottom">
+            <text class="shopBottomLeft">库存量：<text class="colorRed">1000</text></text>
+            <text class="shopBottomRight">运费：<text class="colorRed">免运费</text></text>
+        </view>
+    </view>
+
+    <!-- 详情  --  评论 -->
+    <view class="shopDetailsBox">
+        <view class="detailsBg">
+            <image src="../../img/details/detailsBg.png" mode="widthFix"></image>
+        </view>
+
+        <view class="shopDetailsBtn">
+            <text class="shopBtnItem detailBtn">详情</text>
+            <text class="shopBtnItem commentBtn">评论（<text>400</text>）</text>
+        </view>
+        
+    </view>
+
+    <!-- 内容 -->
+    <view class="detailsContent">
+        <image src="../../img/details/details.jpg"  mode="widthFix"></image>
+    </view>
+
+    
+</view>
+
+<!-- TabBar -->
+<view class="tabBar">
+    <view class="tabBarLeft">
+        <view class="tabBarLeftItem">
+            <image class="index-icon" src="../../img/details/index-icon.png"></image>
+            <text>首页</text>
+        </view>
+        <view class="tabBarLeftItem">
+            <image class="link-icon" src="../../img/details/link-icon.png"></image>
+            <text>转发</text>
+        </view>
+    </view>
+    <view class="tabBarRight">
+        <view class="tabBarRightItem tabBarRighDetails">加入订单</view>
+        <view class="tabBarRightItem tabBarRighBuy">立即购买</view>
+    </view>
+</view>
