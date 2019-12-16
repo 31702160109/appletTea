@@ -68,7 +68,11 @@
 
     <!-- 佣金图表 -->
     <view class="chart">
-        <image src="../../img/my/graph.jpg" mode="widthFix"></image>
+        <image src="../../img/my/graphBg.jpg" mode="widthFix"></image>
+        <view class="myChart">
+            <ec-canvas id="mychart" canvas-id="mychart-line" ec="{{ ec }}"></ec-canvas>
+        </view>
+        
     </view>
 
     <!-- 佣金详细 -->

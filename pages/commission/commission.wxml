@@ -1,4 +1,201 @@
 <!-- 背景图 -->
 <view class="bg">
-    <image src="../../img/bg.png"></image>
+    <image src="../../img/commission/mainBg.jpg"></image>
 </view>
+
+<view class="box">
+
+    <view class="mainTop">
+        <view class="topItem1">佣金记录</view>
+        <view class="topItem2">
+            <image src="../../img/commission/dayAction.png"></image>
+            <image src="../../img/commission/week.png"></image>
+            <image src="../../img/commission/month.png"></image>
+            <image src="../../img/commission/year.png"></image>
+        </view>
+        <view class="topItem3"> {{'< '}}2019-11-30{{' >'}}</view>
+    </view>
+    
+    <!-- 商品 -->
+    <view class="OrderShop">
+    
+        <view class="shopItem">
+            <!-- 商品图片 -->
+            <view class="shopBg">
+                <image src="../../img/commission/shopBg.jpg"></image>
+            </view>
+            <!-- 商品内容 -->
+            <view class="shopContent">
+                <view class="shopDetails">
+                    <view class="shopLeft">
+                        <image src="../../img/myOrder/shopImg.png"></image>
+                    </view>
+                    <view class="shopRight">
+                        <view class="shopTitle">
+                            <text class="orderNumber">订单编号：2654456569642</text>
+                        </view>
+                        <view class="shopRightTop">
+                            <text class="shopRightTitle">【壮瑶茗茶】蒲公英金花茶</text>
+                            <text class="shopRightSize">规格：<text>五盒装</text></text>
+                        </view>
+                        <view class="shopRightBottom">
+                            数量 : 
+                            <text class="shopNumber p30">30</text>
+                            合计 : 
+                            <text class="RMB">¥</text>
+                            <text class="moneyNumber1 p30">580.00</text> 
+                            佣金 : 
+                            <text class="RMB">¥</text>
+                            <text class="moneyNumber2">8000.00</text> 
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="shopItem">
+            <!-- 商品图片 -->
+            <view class="shopBg">
+                <image src="../../img/commission/shopBg.jpg"></image>
+            </view>
+            <!-- 商品内容 -->
+            <view class="shopContent">
+                <view class="shopDetails">
+                    <view class="shopLeft">
+                        <image src="../../img/myOrder/shopImg.png"></image>
+                    </view>
+                    <view class="shopRight">
+                        <view class="shopTitle">
+                            <text class="orderNumber">订单编号：2654456569642</text>
+                        </view>
+                        <view class="shopRightTop">
+                            <text class="shopRightTitle">【壮瑶茗茶】蒲公英金花茶</text>
+                            <text class="shopRightSize">规格：<text>五盒装</text></text>
+                        </view>
+                        <view class="shopRightBottom">
+                            数量 : 
+                            <text class="shopNumber p30">30</text>
+                            合计 : 
+                            <text class="RMB">¥</text>
+                            <text class="moneyNumber1 p30">580.00</text> 
+                            佣金 : 
+                            <text class="RMB">¥</text>
+                            <text class="moneyNumber2">80.00</text> 
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+        
+        <view class="shopItem">
+            <!-- 商品图片 -->
+            <view class="shopBg">
+                <image src="../../img/commission/shopBg.jpg"></image>
+            </view>
+            <!-- 商品内容 -->
+            <view class="shopContent">
+                <view class="shopDetails">
+                    <view class="shopLeft">
+                        <image src="../../img/myOrder/shopImg.png"></image>
+                    </view>
+                    <view class="shopRight">
+                        <view class="shopTitle">
+                            <text class="orderNumber">订单编号：2654456569642</text>
+                        </view>
+                        <view class="shopRightTop">
+                            <text class="shopRightTitle">【壮瑶茗茶】蒲公英金花茶</text>
+                            <text class="shopRightSize">规格：<text>五盒装</text></text>
+                        </view>
+                        <view class="shopRightBottom">
+                            数量 : 
+                            <text class="shopNumber p30">30</text>
+                            合计 : 
+                            <text class="RMB">¥</text>
+                            <text class="moneyNumber1 p30">580.00</text> 
+                            佣金 : 
+                            <text class="RMB">¥</text>
+                            <text class="moneyNumber2">8000.00</text> 
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="shopItem">
+            <!-- 商品图片 -->
+            <view class="shopBg">
+                <image src="../../img/commission/shopBg.jpg"></image>
+            </view>
+            <!-- 商品内容 -->
+            <view class="shopContent">
+                <view class="shopDetails">
+                    <view class="shopLeft">
+                        <image src="../../img/myOrder/shopImg.png"></image>
+                    </view>
+                    <view class="shopRight">
+                        <view class="shopTitle">
+                            <text class="orderNumber">订单编号：2654456569642</text>
+                        </view>
+                        <view class="shopRightTop">
+                            <text class="shopRightTitle">【壮瑶茗茶】蒲公英金花茶</text>
+                            <text class="shopRightSize">规格：<text>五盒装</text></text>
+                        </view>
+                        <view class="shopRightBottom">
+                            数量 : 
+                            <text class="shopNumber p30">30</text>
+                            合计 : 
+                            <text class="RMB">¥</text>
+                            <text class="moneyNumber1 p30">580.00</text> 
+                            佣金 : 
+                            <text class="RMB">¥</text>
+                            <text class="moneyNumber2">8000.00</text> 
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="shopItem">
+            <!-- 商品图片 -->
+            <view class="shopBg">
+                <image src="../../img/commission/shopBg.jpg"></image>
+            </view>
+            <!-- 商品内容 -->
+            <view class="shopContent">
+                <view class="shopDetails">
+                    <view class="shopLeft">
+                        <image src="../../img/myOrder/shopImg.png"></image>
+                    </view>
+                    <view class="shopRight">
+                        <view class="shopTitle">
+                            <text class="orderNumber">订单编号：2654456569642</text>
+                        </view>
+                        <view class="shopRightTop">
+                            <text class="shopRightTitle">【壮瑶茗茶】蒲公英金花茶</text>
+                            <text class="shopRightSize">规格：<text>五盒装</text></text>
+                        </view>
+                        <view class="shopRightBottom">
+                            数量 : 
+                            <text class="shopNumber p30">30</text>
+                            合计 : 
+                            <text class="RMB">¥</text>
+                            <text class="moneyNumber1 p30">580.00</text> 
+                            佣金 : 
+                            <text class="RMB">¥</text>
+                            <text class="moneyNumber2">8000.00</text> 
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+    </view>
+
+    <view class="commissionSum">
+        <view class="positRight">
+            佣金统计： <text class="RMB">¥</text><text>160.00</text>
+        </view>
+    </view>
+</view>
+
+  
