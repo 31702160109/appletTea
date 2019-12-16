@@ -15,10 +15,10 @@
         <!-- 轮播图 -->
         <swiper class='banner' indicator-dots autoplay='true' interval='3000' duration='1000' circular='true'>
             <swiper-item>
-                <image class="banner-img"  src='../../img/details/shop.jpg'></image>
+                <image class="banner-img"  src='../../img/index/tea.jpg'></image>
             </swiper-item>
             <swiper-item>
-                <image class="banner-img"  src='../../img/details/shop.jpg'></image>
+                <image class="banner-img"  src='../../img/index/tea.jpg'></image>
             </swiper-item>
         </swiper>
         <!-- 标题 -->
@@ -72,7 +72,9 @@
 
     <!-- 内容 -->
     <view class="detailsContent">
-        <image src="../../img/details/details.jpg"  mode="widthFix"></image>
+        <image src="../../img/index/banner.jpg"  mode="widthFix"></image>
+        <image src="../../img/index/banner.jpg"  mode="widthFix"></image>
+        <image src="../../img/index/banner.jpg"  mode="widthFix"></image>
     </view>
 
     
@@ -81,7 +83,7 @@
 <!-- TabBar -->
 <view class="tabBar">
     <view class="tabBarLeft">
-        <view class="tabBarLeftItem">
+        <view class="tabBarLeftItem" bindtap="gotoIndex">
             <image class="index-icon" src="../../img/details/index-icon.png"></image>
             <text>首页</text>
         </view>

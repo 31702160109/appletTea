@@ -56,7 +56,7 @@
         </view>
 
         <!-- 立即下单 -->
-        <view class="shopOrder">
+        <view class="shopOrder" bindtap="gotoOrder">
             <image src="../../img/index/submit.png" mode="widthFix"></image>
         </view>
 

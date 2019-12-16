@@ -29,5 +29,17 @@ Component({
                 url: url,
             })
         },
+        //转发
+        // onShareAppMessage: function () {
+        //     let users = wx.getStorageSync('user');
+        //     if (res.from === 'button') { }
+        //     return {
+        //         title: '转发',
+        //         path: '../../pages/index/index',
+        //         success: function (res) { 
+
+        //         }
+        //     }
+        // },
     }
 })

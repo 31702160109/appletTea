@@ -24,11 +24,11 @@ page{
 
 /* 订单状态标题栏 */
 .titleBg{
-    width: 748rpx;
+    width: 100%;
     height: 74rpx;
 }
 .titleBg image{
-    width: 748rpx;
+    width: 100%;
     height: 74rpx;
 }
 .myOrderStatus{

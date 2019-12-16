@@ -67,7 +67,6 @@ page{
 
 /* 商品轮播图 */
 .shopBanner{
-    background-color: blue;
     width: 54%;
     height: 320rpx;
     float: left;

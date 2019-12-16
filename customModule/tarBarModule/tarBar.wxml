@@ -13,7 +13,7 @@
             <image src="../../img/index/index-icon-action.png"></image>
             <text>首页</text>
         </view>
-        <view class="tabBarItem">
+        <view class="tabBarItem" bindtap="onShareAppMessage">
             <image class="tabBarPush" src="../../img/index/push.png" mode="widthFix"></image>
         </view>
         <view class="tabBarItem" id="my" bindtap="gotoPage">
