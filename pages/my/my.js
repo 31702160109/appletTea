@@ -20,9 +20,11 @@ Page({
     },
 
     myOrder: function(event){
-      wx.navigateTo({
-        url: '../myOrder/myOrder',
-      })
+        var orderId = event.currentTarget.id;
+        var orderText = event.currentTarget.dataset.text;
+        wx.navigateTo({
+            url: '../myOrder/myOrder?id=' + orderId + '&orderText=' + orderText,
+        })
     },
     commissionPage: function(event){
         wx.navigateTo({
@@ -74,7 +76,6 @@ Page({
                 right: 30,
                 z: 100,
                 selectedMode: 'single', //使用单选
-
                 data: [//图例具体内容
                     {
                         name: '周',//图例名字
@@ -88,7 +89,6 @@ Page({
                     }
                 ]
             },
-
             grid: {//网格
                 show: true,
                 left: 20,
@@ -98,7 +98,6 @@ Page({
                 containLabel: true, //grid 区域是否包含坐标轴的刻度标签
                 borderWidth: 0,
             },
-
             xAxis: {//横坐标
                 type: 'category',
                 splitNumber: 7,//坐标轴的分割段数
@@ -115,9 +114,7 @@ Page({
                 axisLine: {
                     show: false,//不显示坐标轴线
                 },
-                
             },
-
             yAxis: {//纵坐标
                 type: 'value',
                 position: 'left',
@@ -166,7 +163,6 @@ Page({
                 min: 0,
                 max: 100,
             },
-
             series: [
                 {
                     name: '周',

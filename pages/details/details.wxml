@@ -60,7 +60,7 @@
     <!-- 详情  --  评论 -->
     <view class="shopDetailsBox">
         <view class="detailsBg">
-            <image src="../../img/details/detailsBg.png" mode="widthFix"></image>
+            <image src="../../img/details/detailsBg.png"></image>
         </view>
 
         <view class="shopDetailsBtn">
@@ -88,8 +88,10 @@
             <text>首页</text>
         </view>
         <view class="tabBarLeftItem">
-            <image class="link-icon" src="../../img/details/link-icon.png"></image>
-            <text>转发</text>
+            <button class="shareBtn" open-type="share">
+                <image class="link-icon" src="../../img/details/link-icon.png"></image>
+                <text>转发</text>
+            </button>
         </view>
     </view>
     <view class="tabBarRight">

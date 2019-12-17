@@ -1,11 +1,22 @@
 // pages/commission/commission.js
+var utils = require('../../utils/util.js');
+// 获取最新日期
+var newestDate = utils.formatDate(new Date());
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
+        date: newestDate,
+        newestDate: newestDate
+    },
 
+    // 日期选择器
+    bindDateChange: function (e) {
+        this.setData({
+            date: e.detail.value
+        })
     },
 
     /**

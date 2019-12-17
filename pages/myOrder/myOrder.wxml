@@ -4,17 +4,17 @@
 </view>
 
 <view class="box">
-
+ 
     <!-- 订单状态背景图 -->
     <view class="titleBg">
         <image src="../../img/myOrder/titleBg.jpg"></image>
     </view>
     <!-- 订单状态 -->
-    <view class="myOrderStatus">
-        <text class="statusItem">待付款</text>
-        <text class="statusItem">待发货</text>
-        <text class="statusItem">待收货</text>
-        <text class="statusItem">退款/售后</text>
+    <view class="myOrderStatus" bindtap="orderStatus">
+        <text class="statusItem {{ status=='1'?'active':'' }}" data-text="待付款">待付款</text>
+        <text class="statusItem {{ status=='2'?'active':'' }}" data-text="待发货">待发货</text>
+        <text class="statusItem {{ status=='3'?'active':'' }}" data-text="待收货">待收货</text>
+        <text class="statusItem {{ status=='4'?'active':'' }}" data-text="退款/售后">退款/售后</text>
     </view>
 
     <!-- 正文背景图 -->
@@ -23,9 +23,9 @@
     </view>
 
     <!-- 商品 -->
-    <view class="OrderShop">
+    <view class="OrderShop"  style="{{ displayBlock }}">
         
-        <view class="shopItem">
+        <view class="shopItem" wx:for="{{ shopList }}" wx:key="index">
             <!-- 商品图片 -->
             <view class="shopBg">
                 <image src="../../img/myOrder/shopBg.jpg"></image>
@@ -33,8 +33,8 @@
             <!-- 商品内容 -->
             <view class="shopContent">
                 <view class="shopTitle">
-                    <text class="orderNumber">订单编号：2654456569642</text>
-                    <text class="shopStatus">待付款</text>
+                    <text class="orderNumber">订单编号：{{ item.orderNumber }}</text>
+                    <text class="shopStatus">{{ orderText }}</text>
                 </view>
                 <view class="shopDetails">
                     <view class="shopLeft">
@@ -42,68 +42,34 @@
                     </view>
                     <view class="shopRight">
                         <view class="shopRightTop">
-                            <text class="shopRightTitle">【壮瑶茗茶】蒲公英金花茶</text>
-                            <text class="shopRightSize">规格：<text>五盒装</text></text>
+                            <text class="shopRightTitle">{{ item.shopTitle }}</text>
+                            <text class="shopRightSize">规格：<text>{{ item.shopSize }}盒装</text></text>
                         </view>
                         <view class="shopRightBottom">
                             数量：
-                            <text class="shopNumber">30</text>
+                            <text class="shopNumber">{{ item.shopNumber }}</text>
                             合计：
                             <text class="RMB">¥</text>
-                            <text class="moneyNumber">580.00</text> 
+                            <text class="moneyNumber">{{ item.shopMoney }}</text> 
                         </view>
                     </view>
                 </view>
+
                 <!-- 按钮 -->
                 <view class="shopBtn">
-                    <text class="payBtn">立即付款</text>
+                    <text class="payBtn" wx:if="{{ orderText==='待付款' }}">立即付款</text>
+                    <text class="payBtn" wx:elif="{{ orderText==='待发货' }}">提醒发货</text>
+                    <text class="payBtn" wx:elif="{{ orderText==='待收货' }}">确认收货</text>
+                    <text class="payBtn" wx:else="{{ orderText==='退款/售后' }}">申请售后</text>
                     <text class="detailsBtn" bindtap="detailsBtn">订单详情</text>
                 </view>
             </view>
         </view>
-        
-        <view class="shopItem">
-            <!-- 商品图片 -->
-            <view class="shopBg">
-                <image src="../../img/myOrder/shopBg.jpg"></image>
-            </view>
-            <!-- 商品内容 -->
-            <view class="shopContent">
-                <view class="shopTitle">
-                    <text class="orderNumber">订单编号：2654456569642</text>
-                    <text class="shopStatus">待付款</text>
-                </view>
-                <view class="shopDetails">
-                    <view class="shopLeft">
-                        <image src="../../img/myOrder/shopImg.png"></image>
-                    </view>
-                    <view class="shopRight">
-                        <view class="shopRightTop">
-                            <text class="shopRightTitle">【壮瑶茗茶】蒲公英金花茶</text>
-                            <text class="shopRightSize">规格：<text>五盒装</text></text>
-                        </view>
-                        <view class="shopRightBottom">
-                            数量：
-                            <text class="shopNumber">30</text>
-                            合计：
-                            <text class="RMB">¥</text>
-                            <text class="moneyNumber">580.00</text> 
-                        </view>
-                    </view>
-                </view>
-                <!-- 按钮 -->
-                <view class="shopBtn">
-                    <text class="payBtn">立即付款</text>
-                    <text class="detailsBtn" bindtap="detailsBtn">订单详情</text>
-                </view>
-            </view>
-        </view>
-        
 
     </view>
 
     <!-- 暂无订单 -->
-    <view class="noOrder">
+    <view class="noOrder" style="{{ displayNone }}">
         <text>暂 无 订 单</text>
     </view>
 

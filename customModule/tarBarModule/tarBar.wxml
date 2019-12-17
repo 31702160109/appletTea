@@ -10,14 +10,16 @@
     <!-- 底部导航元素 -->
     <view class="tabBar">
         <view class="tabBarItem" id="index" bindtap="gotoPage">
-            <image src="../../img/index/index-icon-action.png"></image>
+            <image class="indexImg" src="../../img/index/index-icon-action.png"></image>
             <text>首页</text>
         </view>
         <view class="tabBarItem" bindtap="onShareAppMessage">
-            <image class="tabBarPush" src="../../img/index/push.png" mode="widthFix"></image>
+            <button class="pushShareBtn" open-type="share">
+                <image class="tabBarPush" src="../../img/index/push.png" mode="widthFix"></image>
+            </button>
         </view>
         <view class="tabBarItem" id="my" bindtap="gotoPage">
-            <image src="../../img/index/my-icon.png"></image>
+            <image class="myImg" src="../../img/index/my-icon.png"></image>
             <text>我的</text>
         </view>
     </view>

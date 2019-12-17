@@ -13,7 +13,13 @@
             <image src="../../img/commission/month.png"></image>
             <image src="../../img/commission/year.png"></image>
         </view>
-        <view class="topItem3"> {{'< '}}2019-11-30{{' >'}}</view>
+        <view class="topItem3">
+            <picker mode="date" value="{{date}}" start="2017-09-01" end="{{ newestDate }}" bindchange="bindDateChange">
+                <view class="picker">
+                    {{'< ' + date + ' >'}}
+                </view>
+            </picker>
+        </view>
     </view>
     
     <!-- 商品 -->

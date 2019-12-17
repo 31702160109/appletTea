@@ -11,7 +11,6 @@ page{
     position: fixed;
     left: 0;
     bottom: 0;
-    /* background-color: #FFFFFF */
 }
 
 /* 底部导航背景图 */
@@ -40,17 +39,31 @@ page{
     align-items: center;
     justify-content: center;
 }
-.tabBar .tabBarItem image{
-    width: 46rpx;
+.tabBar .indexImg{
+    width: 57rpx;
+    height: 49rpx;
+}
+.tabBar .myImg{
+    width: 43rpx;
     height: 48rpx;
 }
 .tabBar .tabBarItem text{
   font-size: 24rpx;
   margin-top: 10rpx;
 }
-.tabBar .tabBarItem .tabBarPush{
+.tabBarItem button{
+    background-color: transparent;
+    width: 100rpx !important;
+    height: 93rpx !important;
+    overflow: visible;
+}
+.pushShareBtn::after {
+    border: none;
+}
+.tabBarPush{
     position: absolute;
     width: 106rpx !important;
     height: 106rpx !important;
+    right: -1rpx;
     bottom: 20rpx;
 }

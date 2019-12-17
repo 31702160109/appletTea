@@ -44,7 +44,8 @@
         <!-- 商品标题  参数 -->
         <view class="shopTitlePara">
             <view class="shopTitle">【壮瑶茗茶】蒲公  英金花茶</view>
-            <view class="shopPara">中草药配方：金花茶、普华影、淡竹叶、荷叶、鱼腥草、桃仁.净含量：4g每袋</view>
+            <view class="shopPara">中草药配方：金花茶、普华影、淡竹叶、荷叶、鱼腥草、桃仁.</view>
+            <view class="netContent">净含量：<text>4g每袋</text> </view>
         </view>
 
         <!-- 商品参数方框 -->

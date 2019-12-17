@@ -91,15 +91,28 @@ page{
 .shopTitle{
     font-size: 28rpx;
 }
-.shopPara{
-    float: right;
+.netContent{
+    width: 26rpx;
     height: 240rpx;
+    line-height: 47rpx;
+    float: left;
+    font-size: 20rpx;
+    writing-mode: vertical-rl;
+    padding-left: 20rpx;
+    padding-top: 15rpx;
+    overflow: hidden;
+}
+.shopPara{
+    width: 174rpx;
+    height: 240rpx;
+    float: right;
     letter-spacing: 5rpx;
     line-height: 45rpx;
     writing-mode:vertical-rl;
     font-size: 20rpx;
     padding-top: 15rpx;
     padding-right: 27rpx;
+    overflow: hidden;
 }
 .shopRectangle{
     width: 175rpx;

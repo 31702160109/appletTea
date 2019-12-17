@@ -9,7 +9,7 @@ Page({
     },
 
     gotoIndex: function(e){
-        wx.navigateTo({
+        wx.reLaunch({
             url: '../index/index',
         })
     },

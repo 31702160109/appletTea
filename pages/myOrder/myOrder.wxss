@@ -81,6 +81,7 @@ page{
     position: absolute;
     top: 104rpx;
     left: 0;
+    margin-bottom: 105rpx;
 }
 .shopItem{
     position: relative;
@@ -145,6 +146,7 @@ page{
 .shopRightTop .shopRightTitle{
     display: block;
     font-size: 24rpx;
+    line-height: 40rpx;
 }
 .shopRightTop .shopRightSize{
     margin-top: 15rpx;
@@ -193,5 +195,10 @@ page{
 }
 .shopBtn .payBtn{
     border: 1rpx solid red;
+    color: red;
+}
+
+/* 动态改变订单标题状态样式 */
+.active{
     color: red;
 }
