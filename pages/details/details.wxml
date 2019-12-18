@@ -72,6 +72,8 @@
 
     <!-- 内容 -->
     <view class="detailsContent">
+        <!-- <rich-text nodes="{{ html }}"></rich-text> -->
+        <!-- <web-view src='http://www.hminxin.cn/'></web-view> -->
         <image src="../../img/index/banner.jpg"  mode="widthFix"></image>
         <image src="../../img/index/banner.jpg"  mode="widthFix"></image>
         <image src="../../img/index/banner.jpg"  mode="widthFix"></image>

@@ -171,7 +171,7 @@ page{
 /* 商品内容 */
 .detailsContent{
     width: 100%;
-    margin-top: 60rpx;
+    margin-top: 80rpx;
     margin-bottom: 72rpx;
 }
 .detailsContent image{
