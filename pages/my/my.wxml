@@ -18,7 +18,7 @@
     <!-- 个人信息内容 -->
     <view class="headContent">
         <view class="headName">
-            <text>林大包</text>一级助理
+            <text>{{username}}</text>一级助理
         </view>
         <view class="commission">
             佣金总计 <text>10000.00</text> 元

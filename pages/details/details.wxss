@@ -49,12 +49,12 @@ page{
 
 /* 商品标题 */
 .shopTitle{
-    width: 100%;
-    padding: 15rpx;
+    width: 96%;
+    padding: 2%;
     font-size: 32rpx;
 }
 .shopPrice{
-    width: 100%;
+    /* width: 100%; */
     padding: 5rpx 5rpx 0 5rpx;
     font-size: 20rpx;
     color: red;
@@ -66,7 +66,7 @@ page{
     font-size: 42rpx;
 }
 .shopOldPrice{
-    width: 100%;
+    /* width: 100%; */
     margin-left: 30rpx;
     font-size: 22rpx;
     color: #9f9e9d;
@@ -79,9 +79,9 @@ page{
 
 /* 商品参数 */
 .shopParm{
-    width: 100%;
+    width: 96%;
     margin-top: 17rpx;
-    padding: 15rpx;
+    padding: 2%;
     font-size: 22rpx;
     color: #9f9e9d;
     font-style: oblique;
@@ -107,7 +107,7 @@ page{
     padding: 10rpx;
 }
 .parmItemBox{
-    width: 360rpx;
+    width: 340rpx;
     display: flex;
     margin-top: 6rpx;
     padding-left: 20rpx;
@@ -241,4 +241,157 @@ page{
 }
 .tabBarRighBuy{
     background-color: #f5c895;
+}
+
+
+/* 弹框 */
+.popUpBg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    opacity: 0.5;
+    overflow: hidden;
+}
+.popUp{
+    width: 94%;
+    /* height: 400rpx; */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 38rpx 3% 28rpx;
+    background-color: #FFF;
+}
+/* 弹窗商品图片 */
+.popShopImg{
+    width: 170rpx;
+    height: 170rpx;
+    position: absolute;
+    top: -50rpx;
+    left: 30rpx;
+    background-color: #FFF;
+    border-radius: 20rpx;
+    border: 1rpx solid #EEE;
+    padding: 10rpx;
+}
+.popShopImg image{
+    width: 100%;
+    height: 100%;
+}
+.popShopGG{
+    display: flex;
+    flex-direction: column;
+}
+.popShopPrice{
+    position: relative;
+    left: 240rpx;
+    color: red;
+    margin: 1rpx;
+}
+.popShopSize{
+    position: relative;
+    left: 240rpx;
+    font-size: 20rpx;
+    margin: 1rpx;
+}
+/* 分割线 */
+.line{
+  width: 95%;
+  height: 2rpx;
+  display: inline-block;
+  margin: 30rpx 0rpx 5rpx 0rpx;
+  background-color: #f2f2f2;
+  text-align: center;
+}
+.guige{
+    font-size: 28rpx;
+}
+.num{
+    font-size: 28rpx;
+}
+.guigeList{
+    width:100rpx;
+    height:50rpx;
+    line-height:50rpx;
+    /* float:left; */
+    background:#f2f2f2;
+    text-align: center;
+    margin:20rpx 0 0 26rpx;
+    font-size:12px;
+    border-radius: 5px;
+}
+.guigeList .active{
+  color:#fff;
+  background:#e64340;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.row .quantity-position {
+  position: absolute;
+  margin-top:5px;
+  right:50rpx;
+}
+ 
+.btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10rpx;
+}
+.button-add{
+  width:50%;
+  border:0px;
+  background:#4CAF50;
+  color:#fff;
+  border-radius: 0px;
+}
+.button-buy{
+  width:50%;
+  background:#F44336;
+  color:#fff;
+  border-radius: 0px;
+}
+ 
+ 
+/*数量加减样式*/
+/*主容器*/  
+.stepper {  
+    width: 80px;  
+    height: 26px;  
+    /*给主容器设一个边框*/  
+    border: 1px solid #ccc;  
+    border-radius: 3px;  
+    margin:0 auto;  
+}  
+/*加号和减号*/  
+.stepper text {  
+    width: 19px;  
+    line-height: 26px;  
+    text-align: center;  
+    float: left;  
+}  
+/*数值*/  
+.stepper input {  
+  padding:0px;
+    width: 40px;  
+    height: 26px;  
+    float: left;  
+    margin: 0 auto;  
+    text-align: center;  
+    font-size: 12px;  
+    /*给中间的input设置左右边框即可*/  
+    border-left: 1px solid #ccc;  
+    border-right: 1px solid #ccc;  
+}  
+/*普通样式*/  
+.stepper .normal{  
+    color: black;  
 }

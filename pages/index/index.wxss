@@ -1,13 +1,13 @@
 page{
     width: 100%;
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 /* 背景图 */
 .bg{
     width: 100%;
-    height: 100%;
+    height: 99%;
 }
 .bg image{
     width: 100%;
@@ -36,7 +36,7 @@ page{
 
 /* 挂牌 */
 .sign{
-    width: 100%;
+    /* width: 100%; */
     margin-top: -20rpx;
     margin-left: 20rpx;
     z-index: 1
@@ -58,10 +58,10 @@ page{
 
 /* 商品内容 */
 .shopContent{
-    width: 100%;
+    width: 96%;
     position: absolute;
     top: 492rpx;
-    left: 20rpx;
+    left: 28rpx;
     /* background-color: yellow; */
 }
 
@@ -92,18 +92,18 @@ page{
     font-size: 28rpx;
 }
 .netContent{
-    width: 26rpx;
+    width: 32rpx;
     height: 240rpx;
     line-height: 47rpx;
     float: left;
     font-size: 20rpx;
     writing-mode: vertical-rl;
-    padding-left: 20rpx;
+    padding-left: 8rpx;
     padding-top: 15rpx;
     overflow: hidden;
 }
 .shopPara{
-    width: 174rpx;
+    width: 170rpx;
     height: 240rpx;
     float: right;
     letter-spacing: 5rpx;
@@ -119,7 +119,7 @@ page{
     height: 247rpx;
     position: absolute;
     top: 100rpx;
-    right: 130rpx;
+    right: 120rpx;
 }
 
 /* 商品详情 */

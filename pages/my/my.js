@@ -6,6 +6,7 @@ const app = getApp();
 Page({
 
     data: {
+        username: '',
         ec: {
             onInit: function (canvas, width, height) {
                 chart = echarts.init(canvas, null, {
@@ -43,6 +44,26 @@ Page({
         } else {
             this.setOption(Chart); //更新数据
         }
+
+        var _this = this;
+        wx.request({
+            url: 'http://www.hminxin.cn:8000/computer/api/controller_b/login.php',
+            method: 'post',
+            data: {
+                username: 'admin',
+                password: 'admin'
+            },
+            header: { "Content-Type": "application/x-www-form-urlencoded" },
+            success(res) {
+                console.log(res.data.data.name);
+                _this.setData({
+                    username: res.data.data.name
+                })
+            },
+            fail: function (res) {
+                console.log(res.data);
+            }
+        });
     },
 
     //初始化图表
@@ -77,16 +98,9 @@ Page({
                 z: 100,
                 selectedMode: 'single', //使用单选
                 data: [//图例具体内容
-                    {
-                        name: '周',//图例名字
-                        // icon: 'image://../../img/my/circle.png' 
-                    },
-                    {
-                        name: '月',
-                    },
-                    {
-                        name: '年',
-                    }
+                    { name: '周' }, //图例名字
+                    { name: '月' },
+                    { name: '年' }
                 ]
             },
             grid: {//网格
@@ -186,7 +200,7 @@ Page({
         }
         return option;
     },
-
+    
 
     /**
      * 生命周期函数--监听页面显示

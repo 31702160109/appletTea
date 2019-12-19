@@ -1,10 +1,8 @@
 <!-- 背景图 -->
-<view class="bg">
-    <image src="../../img/bg.jpg"></image>
-</view>
+<view class="bg"><image src="../../img/bg.jpg"></image></view>
 
 <view class="box">
-
+ 
     <!-- 商品区域背景图 -->
     <view class="shopBg">
         <image src="../../img/details/shopBg.jpg" mode="widthFix"></image>
@@ -98,6 +96,44 @@
     </view>
     <view class="tabBarRight">
         <view class="tabBarRightItem tabBarRighDetails">加入订单</view>
-        <view class="tabBarRightItem tabBarRighBuy">立即购买</view>
+        <view class="tabBarRightItem tabBarRighBuy" bindtap="buyNowTap">立即购买</view>
     </view>
+</view>
+
+<!-- 弹窗全屏背景 -->
+<view class="popUpBg" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+<!--弹出框  -->
+<view class="popUp" animation="{{ animationData }}" wx:if="{{showModalStatus}}">
+    <view class="popShopImg"><image src="../../img/index/tea.jpg" mode="widthFix"></image></view>
+    <view class="popShopGG">
+        <text class="popShopPrice">¥ 0</text>
+        <text class="popShopSize">
+            <block wx:if="{{popShopSize==''}}">请选择规格</block>
+            <block wx:else>已选择{{popShopSize}}ml</block>
+        </text>
+    </view>
+    <text class="line"></text>
+    <view class="popShopSelect">
+        <text class="guige">规格</text>
+        <view class="guigeList">300ml</view>
+    </view>
+    <text class="line"></text>
+       <view class="row">
+        <text class="num">数量</text>
+        <view class="quantity-position">
+           <view class="stepper">
+            <!-- 减号 -->  
+            <text class="{{minusStatus}}" bindtap="bindMinus">-</text>
+            <!-- 数值 -->  
+            <input type="number" bindinput='bindManual' value="{{num}}" />
+            <!-- 加号 -->  
+            <text class="normal" bindtap="bindPlus">+</text>
+            </view>
+        </view>
+   </view>
+   <text class="line"></text>
+   <view class='btn'>
+        <button class="button-add" bindtap="addCart">提交订单</button>
+        <!-- <button class="button-buy">立即购买</button> -->
+   </view>
 </view>
